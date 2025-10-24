@@ -8,8 +8,14 @@ public class Habit
     public string Name { get; set;}
     public bool Completed { get; set; }
 
+static string filePath = "habits.json";
+
+static void SaveHabits(List<Habit> habits)
+{
+    string json = JsonSerializer.Serialize(habits, new JsonSerializerOptions {WriteIndented = true});
+}
     static void Main()
     {
-        
+
     }
 }
