@@ -8,6 +8,7 @@ public class Habit
     public string Name { get; set;}
     public bool Completed { get; set; }
 
+#region JSON Helpers
 static string filePath = "habits.json";
 
 static void SaveHabits(List<Habit> habits)
@@ -23,8 +24,24 @@ static List<Habit> LoadHabits()
     string json = File.ReadAllText(filePath);
     return JsonSerializer.Deserialize<List<Habit>>(json);
 }
-    static void Main()
-    {
 
+static void ResetTracker()
+{
+    if (File.Exists(filePath))
+    {
+        File.Delete(filePath);
+        Console.WriteLine("\n🌸 Tracker reset successfully! \n");
     }
+    else
+    {
+        Console.WriteLine("\nNo tracker file found to reset. \n");
+    }
+}
+
+#endregion
+
+    // static void Main()
+    // {
+
+    // }
 }
