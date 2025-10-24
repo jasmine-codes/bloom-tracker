@@ -12,7 +12,8 @@ static string filePath = "habits.json";
 
 static void SaveHabits(List<Habit> habits)
 {
-    string json = JsonSerializer.Serialize(habits, new JsonSerializerOptions {WriteIndented = true});
+    string json = JsonSerializer.Serialize(habits, new JsonSerializerOptions { WriteIndented = true });
+    File.WriteAllText(filePath, json);
 }
     static void Main()
     {
