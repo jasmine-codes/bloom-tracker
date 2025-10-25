@@ -53,6 +53,39 @@ static void ResetTracker()
             Console.WriteLine("4) Reset tracker");
             Console.WriteLine("0) Exit");
             Console.Write("Choose an option: ");
+
+            string? choice = Console.ReadLine();
+
+            if (choice == null) Console.WriteLine("Please enter a number.");
+
+            switch (choice)
+            {
+                case "1":
+                ViewHabits(habits);
+                break;
+
+                case "2":
+                AddHabit(habits);
+                break;
+
+                case "3":
+                MarkHabitCompleted(habits);
+                break;
+
+                case "4":
+                ResetTracker();
+                habits = new List<Habit>();
+                break;
+
+                case "0":
+                SaveHabits(habits);
+                Console.WriteLine("Bye for now 🌼");
+                return;
+
+                default:
+                Console.WriteLine("Invalid choice, try again.");
+                break;
+            }
         }
     }
 }
