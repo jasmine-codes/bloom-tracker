@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jasminelee/Documents/Code/CsharpProjects/CsharpProjects/BloomTracker/BloomTracker.csproj": {}
+    "/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/BloomTracker.csproj": {}
   },
   "projects": {
-    "/Users/jasminelee/Documents/Code/CsharpProjects/CsharpProjects/BloomTracker/BloomTracker.csproj": {
+    "/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/BloomTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jasminelee/Documents/Code/CsharpProjects/CsharpProjects/BloomTracker/BloomTracker.csproj",
+        "projectUniqueName": "/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/BloomTracker.csproj",
         "projectName": "BloomTracker",
-        "projectPath": "/Users/jasminelee/Documents/Code/CsharpProjects/CsharpProjects/BloomTracker/BloomTracker.csproj",
+        "projectPath": "/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/BloomTracker.csproj",
         "packagesPath": "/Users/jasminelee/.nuget/packages/",
-        "outputPath": "/Users/jasminelee/Documents/Code/CsharpProjects/CsharpProjects/BloomTracker/obj/",
+        "outputPath": "/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jasminelee/.nuget/NuGet/NuGet.Config"

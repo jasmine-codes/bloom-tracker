@@ -40,8 +40,8 @@ static void ResetTracker()
 
 #endregion
 
-    // static void Main()
-    // {
-
-    // }
+    static void Main()
+    {
+        List<Habit> habits = LoadHabits();
+    }
 }
