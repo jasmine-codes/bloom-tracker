@@ -43,5 +43,16 @@ static void ResetTracker()
     static void Main()
     {
         List<Habit> habits = LoadHabits();
+
+        while (true)
+        {
+            Console.WriteLine("BLOOM TRACKER 🌱");
+            Console.WriteLine("1) View habits");
+            Console.WriteLine("2) Add a habit");
+            Console.WriteLine("3) Mark habit as completed");
+            Console.WriteLine("4) Reset tracker");
+            Console.WriteLine("0) Exit");
+            Console.Write("Choose an option: ");
+        }
     }
 }
