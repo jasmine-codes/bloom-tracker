@@ -97,6 +97,12 @@ static void ResetTracker()
                 Console.WriteLine("No habits yet. Add one to get started 🌱");
                 return;
             }
+
+            Console.WriteLine("\nYour habits:");
+            for (int i = 0; i < habits.Count; i++)
+            {
+                
+            }
         }
     }
 }
