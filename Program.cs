@@ -86,6 +86,17 @@ static void ResetTracker()
                 Console.WriteLine("Invalid choice, try again.");
                 break;
             }
+
+            Console.WriteLine();
+        }
+
+        static void ViewHabits(List<Habit> habits)
+        {
+            if (habits.Count == 0)
+            {
+                Console.WriteLine("No habits yet. Add one to get started 🌱");
+                return;
+            }
         }
     }
 }
