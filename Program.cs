@@ -5,40 +5,40 @@ using System.Collections.Generic;
 
 public class Habit
 {
-    public string Name { get; set;}
+    public string Name { get; set; }
     public bool Completed { get; set; }
 
-#region JSON Helpers
-static string filePath = "habits.json";
+    #region JSON Helpers
+    static string filePath = "habits.json";
 
-static void SaveHabits(List<Habit> habits)
-{
-    string json = JsonSerializer.Serialize(habits, new JsonSerializerOptions { WriteIndented = true });
-    File.WriteAllText(filePath, json);
-}
-
-static List<Habit> LoadHabits()
-{
-    if (!File.Exists(filePath)) return new List<Habit>();
-
-    string json = File.ReadAllText(filePath);
-    return JsonSerializer.Deserialize<List<Habit>>(json);
-}
-
-static void ResetTracker()
-{
-    if (File.Exists(filePath))
+    static void SaveHabits(List<Habit> habits)
     {
-        File.Delete(filePath);
-        Console.WriteLine("\n🌸 Tracker reset successfully! \n");
+        string json = JsonSerializer.Serialize(habits, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(filePath, json);
     }
-    else
-    {
-        Console.WriteLine("\nNo tracker file found to reset. \n");
-    }
-}
 
-#endregion
+    static List<Habit> LoadHabits()
+    {
+        if (!File.Exists(filePath)) return new List<Habit>();
+
+        string json = File.ReadAllText(filePath);
+        return JsonSerializer.Deserialize<List<Habit>>(json);
+    }
+
+    static void ResetTracker()
+    {
+        if (File.Exists(filePath))
+        {
+            File.Delete(filePath);
+            Console.WriteLine("\n🌸 Tracker reset successfully! \n");
+        }
+        else
+        {
+            Console.WriteLine("\nNo tracker file found to reset. \n");
+        }
+    }
+
+    #endregion
 
     static void Main()
     {
@@ -61,34 +61,35 @@ static void ResetTracker()
             switch (choice)
             {
                 case "1":
-                ViewHabits(habits);
-                break;
+                    ViewHabits(habits);
+                    break;
 
                 case "2":
-                AddHabit(habits);
-                break;
+                    AddHabit(habits);
+                    break;
 
                 case "3":
-                MarkHabitCompleted(habits);
-                break;
+                    MarkHabitCompleted(habits);
+                    break;
 
                 case "4":
-                ResetTracker();
-                habits = new List<Habit>();
-                break;
+                    ResetTracker();
+                    habits = new List<Habit>();
+                    break;
 
                 case "0":
-                SaveHabits(habits);
-                Console.WriteLine("Bye for now 🌼");
-                return;
+                    SaveHabits(habits);
+                    Console.WriteLine("Bye for now 🌼");
+                    return;
 
                 default:
-                Console.WriteLine("Invalid choice, try again.");
-                break;
+                    Console.WriteLine("Invalid choice, try again.");
+                    break;
             }
 
             Console.WriteLine();
         }
+        #region Methods
 
         static void ViewHabits(List<Habit> habits)
         {
@@ -105,5 +106,12 @@ static void ResetTracker()
                 Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
             }
         }
+
+        static void AddHabit(List<Habit> habits)
+        {
+            //continue step 6
+        }
+
+        #endregion
     }
 }
