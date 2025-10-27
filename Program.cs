@@ -101,7 +101,8 @@ static void ResetTracker()
             Console.WriteLine("\nYour habits:");
             for (int i = 0; i < habits.Count; i++)
             {
-                
+                string status = habits[i].Completed ? "✅ Done" : "❌ Not done";
+                Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
             }
         }
     }
