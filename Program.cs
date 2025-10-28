@@ -89,6 +89,7 @@ public class Habit
 
             Console.WriteLine();
         }
+
         #region Methods
 
         static void ViewHabits(List<Habit> habits)
@@ -109,7 +110,14 @@ public class Habit
 
         static void AddHabit(List<Habit> habits)
         {
-            //continue step 6
+            Console.Write("Enter a new habit name: ");
+            string? name = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                Console.WriteLine("Habit can't be empty.");
+                return;
+            }
         }
 
         #endregion

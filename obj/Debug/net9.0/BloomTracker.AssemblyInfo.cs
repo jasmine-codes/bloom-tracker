@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BloomTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1107934e9e0cb154cf63a13ad2ce482765ed9452")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff1bff108b41164a5bb41b3b240d2838cd8da3c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BloomTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BloomTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
