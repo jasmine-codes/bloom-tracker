@@ -124,6 +124,11 @@ public class Habit
             Console.WriteLine($"Added habit: {name} 🌸");
         }
 
+        static void MarkHabitCompleted(List<Habit> habits)
+        {
+            
+        }
+
         #endregion
     }
 }
