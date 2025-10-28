@@ -118,6 +118,10 @@ public class Habit
                 Console.WriteLine("Habit can't be empty.");
                 return;
             }
+
+            habits.Add(new Habit {Name = name, Completed = false});
+            SaveHabits(habits);
+            Console.WriteLine($"Added habit: {name} 🌸");
         }
 
         #endregion
