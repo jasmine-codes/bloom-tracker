@@ -1,0 +1,15 @@
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/bin/Debug/net9.0/BloomTracker
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/bin/Debug/net9.0/BloomTracker.deps.json
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/bin/Debug/net9.0/BloomTracker.runtimeconfig.json
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/bin/Debug/net9.0/BloomTracker.dll
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/bin/Debug/net9.0/BloomTracker.pdb
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.AssemblyInfoInputs.cache
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.AssemblyInfo.cs
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.csproj.CoreCompileInputs.cache
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.sourcelink.json
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.dll
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/refint/BloomTracker.dll
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.pdb
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/BloomTracker.genruntimeconfig.cache
+/Users/jasminelee/Documents/Code/CsharpProjects/BloomTracker/obj/Debug/net9.0/ref/BloomTracker.dll

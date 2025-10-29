@@ -126,7 +126,14 @@ public class Habit
 
         static void MarkHabitCompleted(List<Habit> habits)
         {
-            
+            if (habits.Count == 0)
+            {
+                Console.WriteLine("No habits to mark. Add some first 🌿");
+                return;
+            }
+
+            ViewHabits(habits);
+            Console.Write();
         }
 
         #endregion
