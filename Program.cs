@@ -46,6 +46,7 @@ public class Habit
 
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("BLOOM TRACKER 🌱");
             Console.WriteLine("1) View habits");
             Console.WriteLine("2) Add a habit");
@@ -106,6 +107,9 @@ public class Habit
                 string status = habits[i].Completed ? "✅ Done" : "❌ Not done";
                 Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
             }
+
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
         }
 
         static void AddHabit(List<Habit> habits)
@@ -122,6 +126,9 @@ public class Habit
             habits.Add(new Habit {Name = name, Completed = false});
             SaveHabits(habits);
             Console.WriteLine($"Added habit: {name} 🌸");
+
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
         }
 
         static void MarkHabitCompleted(List<Habit> habits)
@@ -146,6 +153,9 @@ public class Habit
             {
                 Console.WriteLine("Invalid habit number.");
             }
+
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
         }
 
         #endregion

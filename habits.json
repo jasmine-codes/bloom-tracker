@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "Name": "Drink water",
+    "Completed": true
+  },
+  {
+    "Name": "Code",
+    "Completed": true
+  }
+]
