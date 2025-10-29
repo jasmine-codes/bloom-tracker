@@ -133,7 +133,13 @@ public class Habit
             }
 
             ViewHabits(habits);
-            Console.Write();
+            Console.Write("Enter the number of the habit to mark completed: ");
+            string? input = Console.ReadLine();
+
+            if (int.TryParse(input, out int index) && index <= habits.Count)
+            {
+                
+            }
         }
 
         #endregion
