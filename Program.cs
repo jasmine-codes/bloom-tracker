@@ -36,6 +36,8 @@ public class Habit
         {
             Console.WriteLine("\nNo tracker file found to reset. \n");
         }
+
+        Console.ReadKey();
     }
 
     #endregion
@@ -108,7 +110,6 @@ public class Habit
                 Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
             }
 
-            Console.WriteLine("Press Enter to continue");
             Console.ReadLine();
         }
 
