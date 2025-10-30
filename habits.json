@@ -1,6 +1,22 @@
 [
   {
-    "Name": "Stretch",
+    "Name": "Make bed",
+    "Completed": false
+  },
+  {
+    "Name": "Eat healthy",
     "Completed": true
+  },
+  {
+    "Name": "Drink water",
+    "Completed": false
+  },
+  {
+    "Name": "Journal",
+    "Completed": false
+  },
+  {
+    "Name": "Stretch",
+    "Completed": false
   }
 ]

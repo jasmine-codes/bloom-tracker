@@ -100,14 +100,15 @@ public class Habit
             if (habits.Count == 0)
             {
                 Console.WriteLine("No habits yet. Add one to get started 🌱");
-                return;
             }
-
-            Console.WriteLine("\nYour habits:");
-            for (int i = 0; i < habits.Count; i++)
+            else
             {
-                string status = habits[i].Completed ? "✅ Done" : "❌ Not done";
-                Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
+                Console.WriteLine("\nYour habits:");
+                for (int i = 0; i < habits.Count; i++)
+                {
+                    string status = habits[i].Completed ? "✅ Done" : "❌ Not done";
+                    Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
+                }
             }
 
             Console.ReadLine();
@@ -124,7 +125,7 @@ public class Habit
                 return;
             }
 
-            habits.Add(new Habit {Name = name, Completed = false});
+            habits.Add(new Habit { Name = name, Completed = false });
             SaveHabits(habits);
             Console.WriteLine($"Added habit: {name} 🌸");
 
