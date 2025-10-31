@@ -149,11 +149,9 @@ public class Habit
             Console.Write("Enter the number of the habit to mark completed: ");
             string? input = Console.ReadLine();
 
-            if (int.TryParse(input, out int index) && index <= habits.Count)
+            if (int.TryParse(input, out int index) && index > 0 && index <= habits.Count)
             {
-                habits[index - 1].Completed = true;
-                SaveHabits(habits);
-                Console.WriteLine($"Mark '{habits[index - 1].Name}' as completed! ✅");
+                
             }
             else
             {
