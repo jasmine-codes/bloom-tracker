@@ -156,8 +156,10 @@ public class Habit
 
                 if (habit.LastCompletedDate == today)
                 {
-                    
+                    Console.WriteLine($"{habit.Name} already marked as completed today! 🌼");
                 }
+
+                //continue here - habit streak step 2
             }
             else
             {
