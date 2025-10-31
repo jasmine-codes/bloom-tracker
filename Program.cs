@@ -151,7 +151,13 @@ public class Habit
 
             if (int.TryParse(input, out int index) && index > 0 && index <= habits.Count)
             {
-                
+                Habit habit = habits[index - 1];
+                DateTime today = DateTime.Today;
+
+                if (habit.LastCompletedDate == today)
+                {
+                    
+                }
             }
             else
             {
