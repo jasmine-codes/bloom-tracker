@@ -8,6 +8,10 @@ public class Habit
     public string Name { get; set; }
     public bool Completed { get; set; }
 
+    public int StreakCount { get; set; }
+
+    public DateTime? LastCompletedDate { get; set; }
+
     #region JSON Helpers
     static string filePath = "habits.json";
 
