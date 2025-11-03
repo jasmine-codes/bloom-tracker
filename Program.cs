@@ -159,7 +159,10 @@ public class Habit
                     Console.WriteLine($"{habit.Name} already marked as completed today! 🌼");
                 }
 
-                if (habit.LastCompletedDate == today.AddDays(-1));
+                if (habit.LastCompletedDate == today.AddDays(-1))
+                {
+                     habit.StreakCount++;
+                }
             }
             else
             {
