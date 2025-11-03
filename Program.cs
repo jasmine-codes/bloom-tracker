@@ -163,6 +163,14 @@ public class Habit
                 {
                      habit.StreakCount++;
                 }
+                else
+                {
+                    habit.StreakCount = 1;
+                    habit.LastCompletedDate = today;
+                }
+
+                habit.Completed = true;
+
             }
             else
             {
