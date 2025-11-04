@@ -158,21 +158,25 @@ public class Habit
                 {
                     Console.WriteLine($"{habit.Name} already marked as completed today! 🌼");
                 }
-
-                if (habit.LastCompletedDate == today.AddDays(-1))
+                else
                 {
-                     habit.StreakCount++;
+                    if (habit.LastCompletedDate == today.AddDays(-1))
+                {
+                    habit.StreakCount++;
+
                 }
                 else
                 {
                     habit.StreakCount = 1;
                 }
+                }
+
+                
 
                 habit.Completed = true;
                 habit.LastCompletedDate = today;
 
                 SaveHabits(habits);
-
                 Console.WriteLine($"marked '{habit.Name}' as completed! ✅");
                 Console.WriteLine($"🔥 Current streak: {habit.StreakCount} day(s)!");
 
@@ -189,3 +193,5 @@ public class Habit
         #endregion
     }
 }
+
+//continue refine MarkHabitCompleted() (step 2)

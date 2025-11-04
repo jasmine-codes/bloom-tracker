@@ -1,22 +1,8 @@
 [
   {
-    "Name": "Make bed",
-    "Completed": false
-  },
-  {
-    "Name": "Eat healthy",
-    "Completed": true
-  },
-  {
-    "Name": "Drink water",
-    "Completed": false
-  },
-  {
-    "Name": "Journal",
-    "Completed": false
-  },
-  {
-    "Name": "Stretch",
-    "Completed": false
+    "Name": "read",
+    "Completed": true,
+    "StreakCount": 1,
+    "LastCompletedDate": "2025-11-04T00:00:00+01:00"
   }
 ]
