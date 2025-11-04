@@ -193,7 +193,11 @@ public class Habit
         static void RefreshHabits(List<Habit> habits)
         {
             DateTime today = DateTime.Today;
-            
+
+            foreach (var habit in habits)
+            {
+                if (habit.LastCompletedDate != today) habit.Completed = false;
+            }
         }
 
         #endregion
