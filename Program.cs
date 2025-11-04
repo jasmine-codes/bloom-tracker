@@ -161,23 +161,22 @@ public class Habit
                 else
                 {
                     if (habit.LastCompletedDate == today.AddDays(-1))
-                {
-                    habit.StreakCount++;
+                    {
+                        habit.StreakCount++;
+
+                    }
+                    else
+                    {
+                        habit.StreakCount = 1;
+                    }
+                    habit.Completed = true;
+                    habit.LastCompletedDate = today;
+
+                    SaveHabits(habits);
+                    Console.WriteLine($"marked '{habit.Name}' as completed! ✅");
 
                 }
-                else
-                {
-                    habit.StreakCount = 1;
-                }
-                }
 
-                
-
-                habit.Completed = true;
-                habit.LastCompletedDate = today;
-
-                SaveHabits(habits);
-                Console.WriteLine($"marked '{habit.Name}' as completed! ✅");
                 Console.WriteLine($"🔥 Current streak: {habit.StreakCount} day(s)!");
 
             }
