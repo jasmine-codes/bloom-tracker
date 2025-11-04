@@ -169,6 +169,7 @@ public class Habit
                     {
                         habit.StreakCount = 1;
                     }
+
                     habit.Completed = true;
                     habit.LastCompletedDate = today;
 
@@ -187,6 +188,12 @@ public class Habit
 
             Console.WriteLine("Press Enter to continue");
             Console.ReadLine();
+        }
+
+        static void RefreshHabits(List<Habit> habits)
+        {
+            DateTime today = DateTime.Today;
+            
         }
 
         #endregion
