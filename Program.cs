@@ -49,6 +49,7 @@ public class Habit
     static void Main()
     {
         List<Habit> habits = LoadHabits();
+        RefreshHabits(habits);
 
         while (true)
         {
@@ -198,10 +199,12 @@ public class Habit
             {
                 if (habit.LastCompletedDate != today) habit.Completed = false;
             }
+
+            SaveHabits(habits);
         }
 
         #endregion
     }
 }
 
-//continue refine MarkHabitCompleted() (step 2)
+//continue step 3 - call it above Main()
