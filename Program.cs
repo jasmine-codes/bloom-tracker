@@ -112,7 +112,8 @@ public class Habit
                 for (int i = 0; i < habits.Count; i++)
                 {
                     string status = habits[i].Completed ? "✅ Done" : "❌ Not done";
-                    Console.WriteLine($"{i + 1}) {habits[i].Name} - {status}");
+                    string streak = habits[i].StreakCount > 0 ? $"{habits[i].StreakCount}-day streak:" : "-";
+                    Console.WriteLine($"{i + 1}) {habits[i].Name} - {status} ({streak})");
                 }
             }
 
