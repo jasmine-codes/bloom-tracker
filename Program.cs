@@ -12,6 +12,12 @@ public class Habit
 
     public DateTime? LastCompletedDate { get; set; }
 
+    static readonly string[] motivationalQuotes =
+    {
+        "✨ Keep going - small steps lead to big change!",
+        "💪 "
+    };
+
     #region JSON Helpers
     static string filePath = "habits.json";
 
@@ -112,7 +118,7 @@ public class Habit
                 for (int i = 0; i < habits.Count; i++)
                 {
                     string status = habits[i].Completed ? "✅ Done" : "❌ Not done";
-                    string streak = habits[i].StreakCount > 0 ? $"{habits[i].StreakCount}-day streak:" : "-";
+                    string streak = habits[i].StreakCount > 0 ? $"{habits[i].StreakCount}-day streak" : "-";
                     Console.WriteLine($"{i + 1}) {habits[i].Name} - {status} ({streak})");
                 }
             }
