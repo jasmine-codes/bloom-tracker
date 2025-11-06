@@ -15,7 +15,11 @@ public class Habit
     static readonly string[] motivationalQuotes =
     {
         "✨ Keep going - small steps lead to big change!",
-        "💪 "
+        "💪 You're showing up for yourself - that's what matters.",
+        "🌿 Progress, not perfection.",
+        "🔥 Consistency beats motivation every time.",
+        "🌞 You did something amazing today!",
+        
     };
 
     #region JSON Helpers
