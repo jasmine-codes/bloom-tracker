@@ -220,7 +220,23 @@ public class Habit
         {
             int streak = habit.StreakCount;
 
-            
+            if (streak == 3)
+            {
+                Console.WriteLine("🏅 You earned the **3-Day Streak** badge! Keep it up!");
+            }
+            else if (streak == 7)
+            {
+                Console.WriteLine("🥈 You earned the **1-Week Consistency** badge! You're unstoppable!");
+            }
+            else if (streak == 14)
+            {
+                Console.WriteLine("🥇 Two weeks strong — the **Momentum Master** badge is yours!");
+            }
+            else if (streak == 30)
+            {
+                Console.WriteLine("🏆 One month of dedication! You're officially a Habit Hero!");
+            }
+
         }
 
         #endregion
