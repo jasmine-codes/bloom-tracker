@@ -19,7 +19,7 @@ public class Habit
         "🌿 Progress, not perfection.",
         "🔥 Consistency beats motivation every time.",
         "🌞 You did something amazing today!",
-        
+        "🧘🏻‍♀️ Take a deep breath - you're doing great."
     };
 
     #region JSON Helpers
@@ -108,7 +108,9 @@ public class Habit
             Console.WriteLine();
         }
 
-        #region Methods
+    }
+
+     #region Methods
 
         static void ViewHabits(List<Habit> habits)
         {
@@ -215,7 +217,4 @@ public class Habit
         }
 
         #endregion
-    }
 }
-
-//continue step 3 - call it above Main()
