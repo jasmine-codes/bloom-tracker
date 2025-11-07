@@ -216,5 +216,12 @@ public class Habit
             SaveHabits(habits);
         }
 
+        static void CheckForBadges(Habit habit)
+        {
+            int streak = habit.StreakCount;
+
+            
+        }
+
         #endregion
 }
