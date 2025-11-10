@@ -197,6 +197,7 @@ public class Habit
 
                 Random random = new Random();
                 string quote = motivationalQuotes[random.Next(motivationalQuotes.Length)];
+                Console.WriteLine(quote);
             }
             else
             {
