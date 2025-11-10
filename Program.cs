@@ -196,7 +196,7 @@ public class Habit
                 CheckForBadges(habit);
 
                 Random random = new Random();
-                
+                string quote = motivationalQuotes[random.Next(motivationalQuotes.Length)];
             }
             else
             {
