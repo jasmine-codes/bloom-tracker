@@ -194,6 +194,9 @@ public class Habit
 
                 Console.WriteLine($"🔥 Current streak: {habit.StreakCount} day(s)!");
                 CheckForBadges(habit);
+
+                Random random = new Random();
+                
             }
             else
             {

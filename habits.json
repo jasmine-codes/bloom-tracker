@@ -2,31 +2,37 @@
   {
     "Name": "make bed",
     "Completed": true,
-    "StreakCount": 2,
-    "LastCompletedDate": "2025-11-06T00:00:00+01:00"
+    "StreakCount": 3,
+    "LastCompletedDate": "2025-11-07T00:00:00+01:00"
   },
   {
     "Name": "journal",
     "Completed": true,
-    "StreakCount": 2,
-    "LastCompletedDate": "2025-11-06T00:00:00+01:00"
+    "StreakCount": 3,
+    "LastCompletedDate": "2025-11-07T00:00:00+01:00"
   },
   {
     "Name": "code",
     "Completed": true,
-    "StreakCount": 2,
-    "LastCompletedDate": "2025-11-06T00:00:00+01:00"
+    "StreakCount": 3,
+    "LastCompletedDate": "2025-11-07T00:00:00+01:00"
   },
   {
     "Name": "aerial hoops",
     "Completed": true,
-    "StreakCount": 2,
-    "LastCompletedDate": "2025-11-06T00:00:00+01:00"
+    "StreakCount": 3,
+    "LastCompletedDate": "2025-11-07T00:00:00+01:00"
   },
   {
     "Name": "exotic pole dance",
     "Completed": true,
-    "StreakCount": 2,
-    "LastCompletedDate": "2025-11-06T00:00:00+01:00"
+    "StreakCount": 3,
+    "LastCompletedDate": "2025-11-07T00:00:00+01:00"
+  },
+  {
+    "Name": "drink 2L water",
+    "Completed": true,
+    "StreakCount": 1,
+    "LastCompletedDate": "2025-11-07T00:00:00+01:00"
   }
 ]
